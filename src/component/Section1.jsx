@@ -19,6 +19,7 @@ function Section1() {
 
 const Section = styled.div`
     display:flex;
+    justify-content:space-between;
     align-items:center;
     height:760px;
     margin-top:24px;

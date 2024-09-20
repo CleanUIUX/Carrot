@@ -1,28 +1,27 @@
 import styled from "styled-components";
 
-function Section2() {
+function Section5() {
     return(
         <Section>
             <Inner>
-                <ImgBox>
-                    <img src="/images/img-section2.webp" alt="" />
-                </ImgBox>
                 <TxtBox>
-                    <p className="subTitle">중고거래</p>
-                    <h3>믿을만한 <br /> 이웃 간 중고거래</h3>
-                    <p className="desc">동네 주민들과 가깝고 따뜻한 거래를 <br /> 지금 경험해보세요.</p>
+                    <p className="subTitle">동네업체</p>
+                    <h3>내 근처에서 찾는 <br /> 동네업체</h3>
+                    <p className="desc">이웃들의 추천 후기를 확인하고 <br /> 동네 곳곳의 업체들을 찾을 수 있어요.</p>
                     <BtnWrap>
-                        <button>인기매물 보기</button>
-                        <button>믿을 수 있는 중고거래</button>
+                        <button>당근 동네업체 보기</button>
                     </BtnWrap>
                 </TxtBox>
+                <ImgBox>
+                    <img src="/images/img-section5.webp" alt="" />
+                </ImgBox>
             </Inner>
         </Section>
     )
 }
 
 const Section = styled.div`
-    background:#f9f9f9;
+    background:#F6FDEC;
 `
 const Inner = styled.div`
     display:flex;
@@ -34,7 +33,7 @@ const Inner = styled.div`
 const ImgBox = styled.div`
 
     img{
-        width:665px;
+        width:650px;
     }
 `
 const TxtBox = styled.div`
@@ -74,4 +73,4 @@ const BtnWrap = styled.div`
         color:#FF6F0F;
     }
 `
-export default Section2;
+export default Section5;

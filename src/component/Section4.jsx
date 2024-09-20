@@ -1,19 +1,18 @@
 import styled from "styled-components";
 
-function Section2() {
+function Section4() {
     return(
         <Section>
             <Inner>
                 <ImgBox>
-                    <img src="/images/img-section2.webp" alt="" />
+                    <img src="/images/img-section4.webp" alt="" />
                 </ImgBox>
                 <TxtBox>
-                    <p className="subTitle">중고거래</p>
-                    <h3>믿을만한 <br /> 이웃 간 중고거래</h3>
-                    <p className="desc">동네 주민들과 가깝고 따뜻한 거래를 <br /> 지금 경험해보세요.</p>
+                    <p className="subTitle">알바</p>
+                    <h3>걸어서 10분! <br /> 동네 알바 구하기</h3>
+                    <p className="desc">당근하듯 쉽고, 편하게 <br /> 당근 알바로 동네 알바를 구할 수 있어요.</p>
                     <BtnWrap>
-                        <button>인기매물 보기</button>
-                        <button>믿을 수 있는 중고거래</button>
+                        <button>내근처 알바 보기</button>
                     </BtnWrap>
                 </TxtBox>
             </Inner>
@@ -34,7 +33,7 @@ const Inner = styled.div`
 const ImgBox = styled.div`
 
     img{
-        width:665px;
+        width:650px;
     }
 `
 const TxtBox = styled.div`
@@ -74,4 +73,4 @@ const BtnWrap = styled.div`
         color:#FF6F0F;
     }
 `
-export default Section2;
+export default Section4;
