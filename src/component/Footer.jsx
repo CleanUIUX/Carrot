@@ -4,7 +4,7 @@ function Footer() {
     return(
         <Footerwrap>
             <Inner>
-                <TopAeaa>
+                <TopArea>
                     <Nav>
                         <ul>
                             <li>
@@ -50,21 +50,78 @@ function Footer() {
                             <button>Google Play</button>
                         </BtnWrap>
                     </DownWrap>
-                </TopAeaa>
-                
+                </TopArea>
+                <BottomArea>
+                    <Left>
+                        <div>
+                            <span>(주) 당근마켓 </span>
+                            <span class="_1trxeqsd">
+                                <svg width="2" height="10" viewBox="0 0 2 10" fill="none" xmlns="http://www.w3.org/2000/svg"><rect opacity="0.5" x="0.535767" width="1.03646" height="10" fill="#868B94"></rect></svg>
+                            </span>
+                            <span><b>대표</b> 김용현, 황도연</span>
+                            <span class="_1trxeqsd">
+                                <svg width="2" height="10" viewBox="0 0 2 10" fill="none" xmlns="http://www.w3.org/2000/svg"><rect opacity="0.5" x="0.535767" width="1.03646" height="10" fill="#868B94"></rect></svg>
+                            </span>
+                            <span><b>사업자번호</b>375-87-00088</span>
+                        </div>
+                        <div>
+                            <span><b>직업정보제공사업 신고번호</b>J123456789</span>
+                        </div>
+                        <div>
+                            <span><b>통신판매업 신고번호</b>J123456789</span>
+                        </div>
+                        <div>
+                            <span><b>호스팅 사업자:</b>J123456789</span>
+                        </div>
+                        <div>
+                            <span><b>주소</b>서울특별시 구로구 디지털로 300</span>
+                        </div>
+                        <div>
+                            <span><b>전화</b>1544-9796</span>
+                            <span class="_1trxeqsd">
+                                <svg width="2" height="10" viewBox="0 0 2 10" fill="none" xmlns="http://www.w3.org/2000/svg"><rect opacity="0.5" x="0.535767" width="1.03646" height="10" fill="#868B94"></rect></svg>
+                            </span>
+                            <span><b>고객문의</b>cs@daangn.com</span>
+                        </div>
+                    </Left>
+                    <Right>
+                        <ul>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                            <li>
+                                <select name="" id="">
+                                    <option value="">한국</option>
+                                    <option value="">미국</option>
+                                    <option value="">영국</option>
+                                    <option value="">일본</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </Right>
+                </BottomArea>
             </Inner>
         </Footerwrap>
     )
 }
 const Footerwrap = styled.div`
-    padding-top:48px;
+    padding:48px 0;
     border-top:1px solid #ccc;
 `
 const Inner = styled.div`
     width:768px;
     margin:0 auto;
 `
-const TopAeaa = styled.div`
+const TopArea = styled.div`
     display:flex;
     justify-content:center;
     gap:50px;
@@ -99,5 +156,29 @@ const BtnWrap = styled.div`
     display:flex;
     gap:8px;
     margin-top:8px;
+
+    button{
+        padding:10px 1.5rem;
+        font-size:16px;
+        font-weight:700;
+        line-height:23.76px;
+        color:#212529;
+        border:none;
+        border-radius:6px;
+        background-color:#E9ECEF;
+    }
+`
+const BottomArea = styled.div`
+    display:flex;
+    justify-content:space-between;
+    margin-top:48px;
+    padding-top:24px;
+    border-top:1px solid #ccc;
+`
+const Left = styled.div`
+
+`
+const Right = styled.div`
+    
 `
 export default Footer;
